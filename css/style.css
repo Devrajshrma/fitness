@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+header {
+  padding-top: 45px;
+}
+
+.m ul li a{
+  color: white !important;
+  margin-right: 20px;
+  }
+
+  .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler i{
+    font-size: 25px;
+}
+
+/* nav bar starts */
+
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+hr {
+    width: 30%;
+    margin: auto;
+    outline: none;
+    border: 2px solid black;
+}
+.back {
+  filter: brightness(70%);
+}
+
+.size {
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: transparent;
+    animation: box_text .5s ease forwards;
+    animation-delay: 1.5s;
+    transition: color 0.5s ease;
+}
+.size:hover {
+  animation-fill-mode: none;
+  transition: all 0.5s ease;
+  color: transparent;
+  -webkit-text-stroke: 2px orange;
+}
+.size span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: black;
+  animation: text_box 1s ease;
+  animation-delay: 1s;
+  transition: all 0.5s ease;
+}
+@keyframes text_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes box_text {
+  100% {color: white;}
+}
